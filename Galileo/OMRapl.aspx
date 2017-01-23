@@ -2,13 +2,12 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="row">
         <div class="col-md-4">
-        <h2>Evalue nuestra aplicación</h2>
+        <h2>Evalue la aplicación desde un movil</h2>
                 <ul style="list-style-type: square">
                 <li style="text-align: justify">Revise el ejemplo de encuesta</li>
                 <li style="text-align: justify">Descargue e imprima el formato</li>
-                <li style="text-align: justify">Responda a las preguntas</li>
-                <li style="text-align: justify">Obtenga una imagen adecuada visite Ayuda</li>
-                <li style="text-align: justify">Escane o fotografie el formato</li>
+                    <li style="text-align: justify">Marque las respuestas en el formato vacio</li>
+                <li style="text-align: justify">Obtenga una imagen adecuada visite Ayuda<li style="text-align: justify">Escane o fotografie el formato</li>
                 <li style="text-align: justify">Revise se observen las siguientes imagenes en las cuatro esquinas de la hoja digitalizada.
         <asp:Image ID="Image5" runat="server" Height="4%" ImageUrl="~/omrtemp/LC Prints.jpg" Width="4%" /> - 
         <asp:Image ID="Image7" runat="server" Height="4%" ImageUrl="~/omrtemp/RC Prints.jpg" Width="4%" />
@@ -20,11 +19,11 @@
                 <li style="text-align: justify">Espere los resultados</li>
                 <li style="text-align: justify">Elija la opcion Resultado</li>
                 <li style="text-align: justify">Observe que se guardaron sus respuestas</li>
+                    <li style="text-align: justify">Confirme la optimización de los recursos del movil y la aplicación en la colecta de datos</li>
             </ul>
         </div>
         <div class="col-md-4">
-            <h2>Ejemplo de encuesta</h2>
-            <p>
+            <h2>Ejemplo de encuesta<p>
                 <asp:HyperLink ID="HyperLink1" runat="server" ImageUrl="~/Imagen/Btnd5057.jpg" NavigateUrl="~/descargar/d5057.jpg" Target="_blank">HyperLink</asp:HyperLink>
             </p>
             <p>
