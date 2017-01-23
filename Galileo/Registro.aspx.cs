@@ -20,6 +20,9 @@ using AForge.Math.Geometry;
 using OMR;
 using OMR.Enums;
 using OMR.helpers;
+using Galileo;
+
+
 namespace Galileo
 {
     public partial class Registro : System.Web.UI.Page
@@ -155,21 +158,23 @@ namespace Galileo
                         sqlComGraba.ExecuteNonQuery();
                 }
 
-                        SmtpClient SmtpServer = new SmtpClient("mail.ppenaw.com");
-                        var mail = new MailMessage();
-                        mail.From = new MailAddress("apl_mx@ppenaw.com");
-                        mail.To.Add(txtCorreo.Text);
-                        mail.CC.Add("aponcedeleon51@hotmail.com");
-                        mail.CC.Add("a.ponce@aec.mx");
-                        mail.Subject = "Registro Galileo OMR encuestado: " + ID.ToString();
-                        mail.IsBodyHtml = true;
-                        string htmlbody = "En breve su registro será validado  . Gracias";
-                        mail.Body = htmlbody;
-                        SmtpServer.Port = 8889;
-                        SmtpServer.UseDefaultCredentials = true;
-                        SmtpServer.Credentials = new System.Net.NetworkCredential("apl_mx@ppenaw.com", "Pru3b4_");
-                        SmtpServer.EnableSsl = false;
-                        SmtpServer.Send(mail);
+                Email.Correo(txtCorreo.Text, ID);
+
+                        //SmtpClient SmtpServer = new SmtpClient("mail.ppenaw.com");
+                        //var mail = new MailMessage();
+                        //mail.From = new MailAddress("apl_mx@ppenaw.com");
+                        //mail.To.Add(txtCorreo.Text);
+                        //mail.CC.Add("aponcedeleon51@hotmail.com");
+                        //mail.CC.Add("a.ponce@aec.mx");
+                        //mail.Subject = "Registro Galileo OMR encuestado: " + ID.ToString();
+                        //mail.IsBodyHtml = true;
+                        //string htmlbody = "En breve su registro será validado  . Gracias";
+                        //mail.Body = htmlbody;
+                        //SmtpServer.Port = 8889;
+                        //SmtpServer.UseDefaultCredentials = true;
+                        //SmtpServer.Credentials = new System.Net.NetworkCredential("apl_mx@ppenaw.com", "Pru3b4_");
+                        //SmtpServer.EnableSsl = false;
+                        //SmtpServer.Send(mail);
 
 
                         Label1.Text = "La hoja fue almacenada con el número: " + ID.ToString();

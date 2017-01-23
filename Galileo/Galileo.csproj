@@ -255,6 +255,7 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="duplicateFile.cs" />
+    <Compile Include="Email.cs" />
     <Compile Include="Fotografia.aspx.cs">
       <DependentUpon>Fotografia.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
