@@ -248,7 +248,9 @@ namespace Galileo
                 ddlEncuestado.DataBind();
                 sqlConn.Close();
 
-                sendmail();
+
+                Email.Correo3(txtEmail.Text);
+                //sendmail();
                 lblW.Visible = true;
                 lblW.Text = "Inserto un nuevo registro. Ya lo puede consultar.";
                 }
