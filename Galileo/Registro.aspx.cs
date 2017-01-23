@@ -158,24 +158,7 @@ namespace Galileo
                         sqlComGraba.ExecuteNonQuery();
                 }
 
-                Email.Correo(txtCorreo.Text, ID);
-
-                        //SmtpClient SmtpServer = new SmtpClient("mail.ppenaw.com");
-                        //var mail = new MailMessage();
-                        //mail.From = new MailAddress("apl_mx@ppenaw.com");
-                        //mail.To.Add(txtCorreo.Text);
-                        //mail.CC.Add("aponcedeleon51@hotmail.com");
-                        //mail.CC.Add("a.ponce@aec.mx");
-                        //mail.Subject = "Registro Galileo OMR encuestado: " + ID.ToString();
-                        //mail.IsBodyHtml = true;
-                        //string htmlbody = "En breve su registro será validado  . Gracias";
-                        //mail.Body = htmlbody;
-                        //SmtpServer.Port = 8889;
-                        //SmtpServer.UseDefaultCredentials = true;
-                        //SmtpServer.Credentials = new System.Net.NetworkCredential("apl_mx@ppenaw.com", "Pru3b4_");
-                        //SmtpServer.EnableSsl = false;
-                        //SmtpServer.Send(mail);
-
+                Email.Correo(txtCorreo.Text, ID, "En breve su registro será validado  . Gracias", 1, "apl_mx@ppenaw.com", "Pru3b4_");
 
                         Label1.Text = "La hoja fue almacenada con el número: " + ID.ToString();
                     }
