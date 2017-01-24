@@ -1,6 +1,15 @@
 ﻿<%@ Page Title="Galileo OMR" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Galileo._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.8&appId=1345426705516240";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
     <div class="jumbotron">
         <h1>Galileo</h1>
@@ -10,7 +19,7 @@
     </div>
 
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
             <h2>Operación amigable</h2>
             <p style="text-align: justify">
                 Le presentamos una aplicación para leer datos de imágenes escaneadas o fotografiadas con tabletas y teléfonos celulares. 
@@ -20,7 +29,7 @@
             </p>
             <p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
             <h2>Componentes y funcionalidad:</h2>
             <ul style="list-style-type: square">
                 <li style="text-align: justify">Base de datos SQL Server ubicado en internet</li>
@@ -35,7 +44,7 @@
             <p>
             </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
             <h2>Aplicación en:</h2>
             <ul style="list-style-type: square">
                 <li style="text-align: justify">Estudios de mercado</li>
@@ -50,6 +59,9 @@
                 <li style="text-align: justify">Solicitudes de admisión</li>
                 <li style="text-align: justify">Controles de asistencia</li>
             </ul>
+        </div>
+        <div class="col-md-3">
+        <div class="fb-page" data-href="https://www.facebook.com/BibliotecaVirtual42/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/BibliotecaVirtual42/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/BibliotecaVirtual42/">Biblioteca virtual</a></blockquote></div>
         </div>
     </div>
 
