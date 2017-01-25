@@ -69,9 +69,6 @@ namespace Galileo
         }
 
 
-        public static void Correo2(string Remitente)
-        {
-        }
 
        
     
