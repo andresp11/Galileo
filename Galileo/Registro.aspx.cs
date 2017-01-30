@@ -47,8 +47,8 @@ namespace Galileo
             {
 
                 String fileExtension = System.IO.Path.GetExtension(FUpEncuesta.FileName).ToLower();
-                String allowedExtensions = ".jpg";
-                if (fileExtension == allowedExtensions)
+                String allowedExtensions = " .jpg .png";
+                if (allowedExtensions.IndexOf(fileExtension) > 0)
                 {
 
                     string filename = System.IO.Path.GetFileName(FUpEncuesta.FileName);
@@ -235,7 +235,7 @@ namespace Galileo
             }
             catch (Exception ex)
             {
-                //                        ex.ToString();
+                ex.ToString();
             }
             finally
             {

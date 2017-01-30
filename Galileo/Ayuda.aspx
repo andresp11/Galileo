@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h2>Guía para obtener mejores imágenes</h2>
     <p class="lead" style="text-align: justify">Lo requisitos mínimos para que una hoja se interpretada correctamente en nuestro OMR son:
-        <br />Imágenes en formato jpg, más de 300 PPP, orientación horizontal y tipo de imagen en blanco y negro.<br /> 
+        <br />Imágenes en formatos jpg o png, más de 300 PPP, orientación horizontal y tipo de imagen en blanco y negro.<br /> 
         Se observen las siguientes imagenes en las cuatro esquinas de la hoja digitalizada.
         <asp:Image ID="Image5" runat="server" Height="3%" ImageUrl="~/omrtemp/LC Prints.jpg" Width="3%" /> - 
         <asp:Image ID="Image7" runat="server" Height="3%" ImageUrl="~/omrtemp/RC Prints.jpg" Width="3%" />
